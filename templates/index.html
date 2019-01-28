@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Weather Station</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!--<link rel="stylesheet" href="{% static "assets/css/main.css" %}"/>-->
+
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}"/>
+
+</head>
+
+<body>
+    <section id="header" class="dark">
+        <header>
+            <h1>Weather Station</h1>
+        </header>
+        <footer>
+            <!--<br>City name: {{ data.name }}</br>
+            <br>Latitude: {{ data.latitude }}</br>
+            <br>Longitude: {{ data.longitude }}</br>
+            <br>Temperature: {{ data.temp }}</br>
+            <br>Humidity: {{ data.humidity }}</br>
+            <br>Pressure: {{ data.pressure }}</br>
+            <br>Wind Speed: {{ data.wind_speed }}</br>
+            <br>Weather: {{ data.weather }}</br>-->
+            <img src="{% static "images/sun.png" %}" alt="Sunny" width="80" height="80">
+            <ul>
+                <li>City name: {{ data.name }}</li>
+                <li>Latitude: {{ data.latitude }}</li>
+                <li>Longitude: {{ data.longitude }}</li>
+                <li>Temperature: {{ data.temp }}</li>
+                <li>Humidity: {{ data.humidity }}</li>
+                <li>Pressure: {{ data.pressure }}</li>
+                <li>Wind Speed: {{ data.wind_speed }}</li>
+                <li>Weather: {{ data.weather }}</li>
+                
+            </ul>
+        </footer>
+    </section>
+
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.scrolly.min.js' %}"></script>
+        <script src="{% static 'assets/js/browser.min.js' %}"></script>
+        <script src="{% static 'assets/js/breakpoints.min.js' %}"></script>
+        <script src="{% static 'assets/js/util.js' %}"></script>
+        <script src="{% static 'assets/js/main.js' %}"></script>
+    
+    <!-- Scripts -->
+        <!--<script src="{% static "assets/js/jquery.min.js" %}"></script>
+        <script src="{% static "assets/js/jquery.scrolly.min.js" %}"></script>
+        <script src="{% static "assets/js/browser.min.js" %}"></script>
+        <script src="{% static "assets/js/breakpoints.min.js" %}"></script>
+        <script src="{% static "assets/js/util.js" %}"></script>
+        <script src="{% static "assets/js/main.js" %}"></script>-->
+        
+</body>
+
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+
+</body>
+
+</html>-->
